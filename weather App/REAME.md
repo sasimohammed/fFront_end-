@@ -1,7 +1,7 @@
 
 # Weatherly
 
-Weatherly is a weather app that provides real-time weather forecasts and air pollution data. Built using **HTML**, **Tailwind CSS**, and **JavaScript**, the app fetches live weather information from various APIs. The app is fully responsive and deployed on **Vercel**.
+Weatherly is a weather app that provides real-time weather forecasts and air pollution data. Built using **HTML**, **Tailwind CSS**, and **JavaScript**, the app fetches live weather information from various APIs. The app is fully responsive and deployed on **Netlify**.
 
 ![image](https://github.com/user-attachments/assets/4108711f-f2b8-4f3f-b244-e57ff57191df)
 
