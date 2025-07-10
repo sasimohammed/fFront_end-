@@ -1,0 +1,178 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box-sizing across all elements */
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+
+}
+
+/* Main Card Styling */
+main {
+  background-color: lemonchiffon; /* Light yellow background */
+  width: 27%; /* Card width */
+  height: 75vh; /* Card height relative to viewport */
+  min-width: 400px; /* Minimum width */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-direction: column; /* Vertical layout */
+  border-radius: 10%; /* Rounded corners */
+  border: 3px solid yellow; /* Yellow border */
+
+}
+
+/* Card Content Container */
+.card_content {
+  width: 100%; /* Content width */
+  margin: auto; /* Centers the content */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-direction: column; /* Vertical layout */
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  gap: 30px; /* Adds space between elements */
+}
+
+/* Info Section - Image, Name, Description */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Vertical layout */
+  gap: 10px; /* Adds space between elements */
+}
+
+.info img {
+  width: 40%; /* Image size */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Circular image */
+}
+
+.info h1,
+.info p {
+  font-family: 'Bai Jamjuree', sans-serif; /* Uses the imported font */
+}
+
+.info p {
+  text-align: center; /* Centers the text */
+  width:70%;
+}
+
+
+.info::before {
+  content: " ";
+  height: 120px;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  position: absolute; /* Position it absolutely */
+  top:0; /* Place it below the section (half of the height to center it) */
+  left: 0;
+  background-color: #fabb17;
+z-index: -1;
+}
+
+/* Social Media Icons Styling */
+.social_media {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  gap: 20px; /* Adds space between icons */
+}
+
+.social_media a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+.social_media i {
+  font-size: 35px; /* Icon size */
+  color: black; /* Icon color */
+  background-color: gold; /* Background color */
+  border-radius: 50%; /* Circular shape */
+  padding: 15px; /* Padding inside the icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex;
+  transition: transform 0.2s; /* Smooth scale transition */
+  justify-content: center; /* Centers icon inside the circle */
+  align-items: center; /* Centers icon inside the circle */
+  width: 50px; /* Icon width */
+  height: 50px; /* Icon height */
+}
+
+.social_media i:hover {
+  transform: scale(1.2); /* Enlarges the icon on hover */
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically */
+  gap: 20px; /* Adds space between buttons */
+}
+
+
+
+
+
+
+.buttons button {
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Removes border */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: black; /* Button background color */
+  color: white; /* Button text color */
+}
+
+/* Interaction Section - Like, Comment, Share */
+.interact {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  gap: 30px; /* Adds space between items */
+  flex-direction: row; /* Horizontal layout */
+  font-size: 20px; /* Font size */
+  margin-bottom: 30px;
+  font-family: 'Bai Jamjuree', sans-serif; /* Uses the imported font */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+.interact p {
+  border-bottom: 2px solid black; /* Adds a bottom border to each item */
+  padding: 10px 15px; /* Padding inside each item */
+  border-radius: 10px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 13px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s ease; /* Smooth scale transition */
+  display: flex;
+  align-items: center; /* Centers text and icon vertically */
+  gap: 5px; /* Adds space between text and icon */
+  color: black; /* Text color */
+}
+
+
+
+.interact p:hover {
+  transform: scale(1.1); /* Slightly enlarges the item on hover */
+  background-color: gold; /* Changes background color on hover */
+}
+
+
+
